@@ -1,0 +1,78 @@
+.progress,
+.question,
+.buttons button {
+    background-color: #1C2434;
+    border-radius: 8px;
+}
+
+.progress {
+    margin-bottom: 20px;
+}
+
+.progress > div {
+    width: 50%;
+    background-color: var(--orange);
+    white-space: nowrap;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: .3s;
+    user-select: none;
+}
+
+.question {
+    width: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.question h3 {
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.buttons button {
+    width: 250px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    border: 0;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background: var(--orange);
+}
+
+.hasTestResult {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hasTestResult h2 {
+    color: var(--orange);
+}
+
+.hasTestResult button {
+    padding: 10px 30px;
+    background: var(--orange);
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+}
+
+.hasTestResult button:hover {
+    background: transparent;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+}

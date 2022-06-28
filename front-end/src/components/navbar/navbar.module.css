@@ -1,0 +1,147 @@
+.container {
+    background: var(--dark-blue);
+    padding: 15px 0;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4 {
+    font-size: 22px;
+    letter-spacing: 1.7px;
+    border-bottom: 3px solid var(--orange);
+    margin: 0 0 5px 15px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 0 7px;
+}
+
+.menu li:hover {
+    color: var(--orange);
+}
+
+.menuIcon {
+    width: 25px;
+    height: 25px;
+    display: none;
+    cursor: pointer;
+}
+
+.search input {
+    background: var(--bg-color);
+    border: 0;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px 15px;
+    outline: none;
+    position: relative;
+    margin-right: -30px;
+}
+
+.searchIcon {
+    position: relative;
+    right: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+}
+
+.menuIcon:hover,
+.userIcon:hover > img {
+    filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 1000px) {
+    .container > div {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .userIcon {
+        display: none;
+    }
+
+    .searchIcon:hover {
+        filter: brightness(0) invert(1);
+        cursor: pointer;
+    }
+
+    .searchIcon {
+        width: 23px;
+        height: 23px;
+        right: 0;
+    }
+
+    .search input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+        opacity: 0;
+        z-index: -1;
+        transition: .2s;
+        border: 1px solid var(--gray);
+        border-left: 0;
+        border-right: 0;
+    }
+    .search.active input {
+        top: 75px;
+        opacity: 1;
+        z-index: 100;
+    }
+
+    .menuIcon {
+        display: block;
+    }
+
+    .menu {
+        width: 70%;
+        height: 100%;
+        background: #1C2434;
+        flex-direction: column;
+        position: fixed;
+        right: -70%;
+        top: 0;
+        z-index: 300;
+        padding: 40px;
+        transition: all 0.5s ease;
+        opacity: 0;
+    }
+
+    .menu.active {
+        right: 0;
+        transition: all 0.5s ease;
+        opacity: 1;
+    }
+
+    .menu li {
+        width: fit-content;
+        font-size: 25px;
+        margin-bottom: 20px;
+        position: relative;
+        border-bottom: 3px solid transparent;
+    }
+
+    .menu li:hover {
+        color: #fff;
+        border-bottom: 3px solid #fff;
+    }
+}

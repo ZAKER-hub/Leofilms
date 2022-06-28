@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-blue);
+    padding: 30px;
+}
+
+.copyright {
+    color: var(--gray);
+}
+
+.scroll {
+    min-width: 45px;
+    height: 35px;
+    background: var(--orange);
+    border-radius: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.scroll::after,
+.scroll::before {
+    content: "";
+    width: 12px;
+    height:3px;
+    background: #fff;
+    position: absolute;
+    top: 15px;
+}
+
+.scroll::before {
+    left: 13px;
+    transform: rotate(-45deg);
+}
+
+.scroll::after {
+    transform: rotate(-135deg);
+    left: 20px;
+}

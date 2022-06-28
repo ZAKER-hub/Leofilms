@@ -1,0 +1,73 @@
+.card {
+    width: 146px;
+    position: relative;
+    height: fit-content;
+}
+
+.card::before {
+    content: attr(data-rating);
+    background:
+            url('@/assets/rating-icon.svg') no-repeat center left / 16px,
+            rgba(0, 0, 0, .82);
+    height: 23px;
+    width: 47px;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: end;
+    padding: 2px 6px;
+    border-bottom-right-radius: 7px;
+}
+
+.poster {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 205px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card:hover .poster::after {
+    content: "";
+    width: 100%;
+    height: 81%;
+    background:
+            url('@/assets/play-icon.svg') no-repeat center center / 30px,
+            rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subtitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #747474;
+}
+
+.subtitle span,
+.subtitle span:after {
+    color: #747474;
+}
+
+.subtitle span {
+    font-size: 15px;
+}
+
+.subtitle span:after {
+    content: ", ";
+}

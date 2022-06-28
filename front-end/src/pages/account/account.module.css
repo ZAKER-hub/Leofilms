@@ -1,0 +1,28 @@
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.info li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info span {
+    color: var(--gray);
+}
+
+.button {
+    background: var(--orange);
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}

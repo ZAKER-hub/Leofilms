@@ -1,0 +1,72 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info img {
+    height: 355px;
+    width: 252px;
+}
+
+.info .about {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.info .about h2 {
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.info .about p {
+    margin-bottom: 10px;
+}
+
+.info .about span {
+    color: var(--gray);
+}
+
+.description {
+    margin: 35px 0;
+}
+
+.description h3 {
+    font-size: 25px;
+}
+
+.description p {
+    color: var(--gray);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons button {
+    color: var(--orange);
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 570px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info .about {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}

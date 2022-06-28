@@ -1,0 +1,31 @@
+.title {
+    position: relative;
+    top: -69px;
+    padding: 0 1px 10.5px 0;
+    background-image: linear-gradient(to right,#1d1d1d,var(--orange) 50%,#1d1d1d);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 90% 2px;
+}
+
+.title h1 {
+    font-size: 27px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        top: -63px;
+    }
+
+    .title h1 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title h1 {
+        font-size: 4vw;
+    }
+}

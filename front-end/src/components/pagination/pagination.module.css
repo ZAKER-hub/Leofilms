@@ -1,0 +1,41 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.pagination button {
+    width: 50px;
+    height: 35px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 5px;
+    background: transparent;
+}
+
+.pagination button:last-of-type img {
+    transform: rotate(180deg);
+}
+
+.pagination button:hover {
+    background: transparent;
+    border: 1px solid var(--orange);
+}
+
+.active {
+    background: var(--orange) !important;
+}
+
+.disabled {
+    cursor: default !important;
+    background: var(--gray);
+}
+
+.disabled:hover {
+    background: var(--gray) !important;
+}

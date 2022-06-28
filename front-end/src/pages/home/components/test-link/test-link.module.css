@@ -1,0 +1,33 @@
+.section {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 40px;
+    padding: 35px 0;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 14px 0;
+}
+
+.subtitle span {
+    color: #049ED7;
+}
+
+.link {
+    width: fit-content;
+    display: block;
+    color: #fff;
+    background: #CA744C;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 9px 20px;
+}
